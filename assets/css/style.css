@@ -1,0 +1,318 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+
+
+body{
+    /* font-family: 'Montserrat', sans-serif; */
+    font-weight: bold;
+    font-family: 'Roboto Slab', serif;
+}
+
+.first{
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    color:white;
+    font-weight: bold;
+}
+h1{
+    font-weight: bolder;
+}
+
+.navbar-brand{
+    color: rgb(247, 211, 8);
+}
+.head{
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: 100%;
+    animation-name: slide;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes slide{
+    0%{
+        background-image: url('../img/header-bg.png');
+    }
+    33%{
+        background-image: url('../img/banner.png');
+    }
+    100%{
+        background-image: url('../img/bg.jpg');
+    }
+}
+
+/* .nav-link:hover {
+   background-color:rgb(255, 230, 0);
+   border-radius: 50px;
+   transition: 1s;
+   color:brown;
+} */
+
+
+.heading{
+    text-align: center;
+}
+
+.form{
+    text-align: center;
+}
+
+.lbl,.inputs{
+    display: block;
+    width:60%;
+    margin: auto;
+    font-size: large;
+}
+
+.lbl{
+    margin-top: 30px;
+}
+
+/* .btn{
+    margin-top: 30px;
+    width:150px;
+    color: black;
+    background-color:white;
+    border-radius: 50px;
+    font-size: large;
+    transition: 0.5s;
+}
+.btn:hover{
+    background-color: gray;
+    font-weight: bolder;
+    cursor: pointer;
+} */
+.search{
+    display: block;
+    width:75%;
+    margin: auto;
+    font-size: large;
+    margin-top: 10px;
+}
+
+.searchBtn{
+    margin-top: 10px;
+}
+/* .tbl{
+    width:75%;
+    margin: auto;
+}
+
+table,th,td{
+    border: solid;
+    margin-top: 25px;
+    border-style: groove;
+    text-align: center;
+}
+
+th{
+    width:160px;
+} */
+table{
+    margin-top: 10px;
+    text-align: center;
+}
+
+#updateBtn{
+    color:white;
+    background-color:rgb(46, 46, 192);
+    transition: 0.5s;
+    border: 0cm;
+    border-radius: 10px;
+   
+}
+#updateBtn:hover{
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+#deleteBtn{
+    color:white;
+    background-color:rgb(194, 40, 40);
+    transition: 0.5s;
+    border: 0cm;
+    border-radius: 10px;
+}
+#deleteBtn:hover{
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+/* #deleteAllBtn{
+    background-color:red; 
+    color:white;
+    border-radius: 50px;
+    transition: 0.5s;
+} */
+.cards{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-bottom: 100px;
+}
+
+.card{
+    text-align: center;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+.card a{
+    background-color:rgb(233, 211, 14);
+    font-weight: bold;
+}
+
+.card img{
+    width:286px;
+    height: 286px;
+}
+
+.card h4{
+    color:rgb(12, 12, 143) ;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: larger;
+}
+.card h5 ,.card p{
+    text-transform: capitalize;
+}
+
+.card .bg-white{
+    color:rgb(189, 5, 5);
+    text-decoration: line-through;
+}
+.card h5{
+    color:rgb(12, 12, 143);
+}
+.heading{
+    margin-top: 70px;
+    color:rgb(12, 12, 143);
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.desc{
+    width:50%;
+    margin: auto;
+    color:rgb(12, 12, 143);
+}
+
+section .navbar a{
+    padding-top: 50px;
+    margin-left: 150px;
+    color:rgb(12, 12, 143) ;
+    font-weight: bold;
+    font-size: larger;
+    border-bottom: solid rgb(12, 12, 143);
+}
+
+#all{
+    border-bottom: rgb(247, 211, 8) solid;
+}
+
+.myClass{
+    background-color: transparent;
+    border: 0cm;
+    color: rgb(12, 12, 143);
+}
+
+
+.MyColor{
+    color:rgb(12, 12, 143) !important;
+    font-family:monospace;
+    font-weight: bold;
+    text-align: center;
+}
+
+.MyCol{
+    color:brown !important;
+    font-family:monospace;
+    font-weight: bold;
+    text-align: center;
+}
+
+.cases{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+span{
+    color:brown;
+}
+
+.API{
+    text-align: center;
+    /* background-image: linear-gradient(rgb(252, 240, 176),rgb(201, 201, 250)); */
+}
+
+.API .desc{
+    font-weight: bold;
+    font-family:cursive;
+}
+
+.API h1{
+    font-family:cursive;
+}
+
+.content i{
+    font-size: 150px;
+}
+
+.content{
+    color:rgb(12, 12, 143);
+}
+.show{
+    display: block;
+}
+
+.hide{
+    display: none;
+}
+
+i{
+    font-size: 25px;
+    color: rgb(12, 12, 143);
+}
+
+.apiCard{
+    background-image: linear-gradient(rgb(255, 233, 233),rgb(227, 227, 252));
+}
+
+.about{
+    width:50%;
+}
+
+.sendUsfeedback{
+    width:50%;
+    text-align: center;
+}
+
+.sendfeedback{
+    background-color: #04091e;
+    color: white;
+}
+.center{
+    text-align: center;
+}
+
+.tblcolor i,.tblcolor a{
+    color:black;
+}
+
+
+#check{
+    visibility:hidden;
+}
+
+#final{
+    justify-content: space-evenly;
+}

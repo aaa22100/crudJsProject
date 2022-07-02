@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Manage Courses</title>
+    <!--font awesome v-6 -->
+    <link rel="stylesheet" href="assets/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="homeBack d-flex justify-content-end mt-5">
+            <i class="fa-solid fa-house">
+                <a href="index.html">Home</a>
+            </i>
+        </div>
+        <div class="heading">
+            <h1>COURSES </h1>
+        </div>
+        <div class="form">
+            <label class="lbl">course name<span class="text-danger">*</span></label>
+            <input class="inputs form-control" placeholder="course name"  type="text" id="courseName"/>
+    
+            <label class="lbl">course category</label>
+            <input class="inputs form-control" placeholder="course category"  type="text" id="courseCategory" />
+    
+            <label class="lbl">course price</label>
+            <input class="inputs form-control" placeholder="course price" type="number" id="coursePrice" />
+    
+            <label class="lbl">course price befor discount</label>
+            <input class="inputs form-control" placeholder="course price" type="number" id="beforPrice" min="100" max="10000" />
+    
+            <label class="lbl">course desc</label>
+            <textarea class="inputs form-control" placeholder="course desc" type="text" id="courseDesc" ></textarea>
+            <input type="file" id="myFileInput" class="inputs">
+            <button type="button" class="btn btn-success" id="addBtn" disabled>Add Course</button>
+            <!-- <button class="btn">Clear</button> -->
+            <button type="button" class="btn btn-danger" id="deleteAllBtn">Delete All</button>
+            <input class="search" type="search" placeholder="search ... " id="search" onkeyup="search(this.value)"/>
+            <br>
+            <button type="button" class="btn btn-info" class="searchBtn" id="searchBtn">search course</button>
+        </div>
+        
+        <div class="tbl">
+            <table border="1" class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>name</th>
+                        <th>category</th>
+                        <th>price</th>
+                        <th>price before discount</th>
+                        <th>desc</th>
+                        <th>delete</th>
+                        <th>update</th>
+                        <th>photo</th>
+                    </tr>
+                </thead>
+                <tbody id="data">
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="crud.js"></script>
+</body>
+</html>
